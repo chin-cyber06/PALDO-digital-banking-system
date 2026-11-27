@@ -1,0 +1,5 @@
+[
+  { "id": "acc-savings", "accountNumber": "5478123498761234", "accountType": "savings", "status": "active", "balance": 4825075, "updatedAt": "2026-10-14T08:30:00.000Z" },
+  { "id": "acc-checking", "accountNumber": "8844203611997788", "accountType": "checking", "status": "active", "balance": 1248000, "updatedAt": "2026-10-13T11:12:00.000Z" },
+  { "id": "acc-frozen", "accountNumber": "7711992200449911", "accountType": "checking", "status": "frozen", "balance": 325000, "updatedAt": "2026-10-12T09:45:00.000Z" }
+]

@@ -1,0 +1,21 @@
+/* Page scaffolding used by all layouts (sidebar/topbar arrive in Phase 2) */
+.app-shell { min-height: 100vh; background: var(--bg); }
+.main-content { max-width: 1340px; margin: auto; padding: 32px 38px 70px; }
+.page { animation: page .3s ease; }
+.narrow { max-width: 900px; margin: auto; }
+.page-heading { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 27px; }
+.page-heading > div > p { font-size: 11px; font-weight: 700; letter-spacing: 1.7px; color: var(--primary); margin: 0 0 3px; }
+.page-heading h1 { font-size: 29px; margin: 2px 0 3px; }
+.page-heading span { color: var(--muted); font-size: 13px; }
+.flow-card { padding: 28px; margin-top: 38px; }
+.flow-actions { display: flex; justify-content: flex-end; gap: 9px; margin-top: 22px; }
+
+.auth-layout { min-height: 100vh; background: var(--surface); }
+
+@media (max-width: 700px) {
+  .main-content { padding: 22px 15px 100px; }
+  .page-heading { align-items: flex-start; margin-bottom: 20px; }
+  .page-heading h1 { font-size: 24px; }
+  .flow-card { padding: 18px; margin-top: 5px; }
+  .flow-actions .btn { flex: 1; }
+}

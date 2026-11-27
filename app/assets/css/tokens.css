@@ -1,0 +1,42 @@
+/* PALDO design tokens (ported from the prototype). Light is the default; .dark on <html> switches. */
+:root {
+  --primary: #d90429;
+  --primary-hover: #b80322;
+  --soft: #ffe5e8;
+  --bg: #fff7f7;
+  --surface: #fff;
+  --elevated: #fff;
+  --border: #f1d5d8;
+  --text: #1a0b0d;
+  --muted: #6b5559;
+  --shadow: 0 12px 36px rgba(87, 19, 30, 0.08);
+  --gradient: linear-gradient(135deg, #ff4d5e, #d90429 55%, #8d0b1f);
+  --success: #16834c;
+  --success-soft: #e4f6ed;
+  --warning: #9a6300;
+  --warning-soft: #fff1cf;
+  color-scheme: light;
+  font-family: Inter, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+}
+
+:root.dark {
+  --primary: #ff4d5e;
+  --primary-hover: #ff6b78;
+  --soft: #3a171e;
+  --bg: #120709;
+  --surface: #1e1013;
+  --elevated: #2a171b;
+  --border: #3a2328;
+  --text: #fbeff0;
+  --muted: #c4a9ad;
+  --shadow: 0 10px 34px rgba(0, 0, 0, 0.24);
+  --gradient: linear-gradient(135deg, #ff6b78, #e5102f 55%, #9e1228);
+  --success: #62d99a;
+  --success-soft: #17382a;
+  --warning: #ffca54;
+  --warning-soft: #3b2b13;
+  color-scheme: dark;
+}
