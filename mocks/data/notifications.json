@@ -1,0 +1,5 @@
+[
+  { "id": "bill-reminder-fiberlink", "title": "Bill reminder", "description": "FiberLink Home is due in 3 days.", "icon": "bills", "minutesAgo": 60, "read": false, "link": "/bills" },
+  { "id": "new-login-windows", "title": "New login", "description": "Chrome on Windows signed in to your account.", "icon": "user", "minutesAgo": 1440, "read": false, "link": "/settings" },
+  { "id": "password-changed", "title": "Password changed", "description": "Your PALDO password was updated successfully.", "icon": "settings", "minutesAgo": 82000, "read": true, "link": "/settings" }
+]

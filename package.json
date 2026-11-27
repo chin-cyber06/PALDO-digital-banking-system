@@ -1,0 +1,28 @@
+{
+  "name": "paldo-frontend",
+  "version": "1.2.0-phase2",
+  "private": true,
+  "type": "module",
+  "description": "PALDO digital banking frontend (Nuxt 4, mock-first, backend-ready)",
+  "engines": { "node": ">=20.19.0" },
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.11.0",
+    "lucide-vue-next": "^0.468.0",
+    "nuxt": "^4.0.0",
+    "pinia": "^3.0.0",
+    "vue": "^3.5.0",
+    "vue-router": "^4.5.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.0",
+    "tailwindcss": "^4.1.0"
+  }
+}

@@ -1,0 +1,4 @@
+[
+  { "fullName": "Alex Santos", "email": "alex@paldo.app", "username": "alex", "phone": "+63 917 123 4567", "dateOfBirth": "2002-04-18", "address": "Quezon City, Metro Manila", "role": "customer", "status": "active", "createdAt": "2025-06-12T08:00:00.000Z", "lastPasswordChange": "2026-09-02T10:30:00.000Z" },
+  { "fullName": "PALDO Admin", "email": "admin@paldo.app", "username": "admin", "phone": "+63 917 123 4567", "dateOfBirth": "2002-04-18", "address": "Quezon City, Metro Manila", "role": "admin", "status": "active", "createdAt": "2025-06-12T08:00:00.000Z", "lastPasswordChange": "2026-09-02T10:30:00.000Z" }
+]

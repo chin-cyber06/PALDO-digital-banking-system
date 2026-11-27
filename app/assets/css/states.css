@@ -1,0 +1,31 @@
+/* Module states (?state= preview), 403/404 pages, placeholders */
+.module-state { min-height: 62vh; }
+.skeleton-state { padding-top: 8px; }
+.state-heading { width: min(360px, 75%); height: 70px; }
+.state-skeleton-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 24px; }
+.state-skeleton-grid .skeleton { height: 150px; }
+.state-message { display: grid; place-items: center; align-content: center; text-align: center; }
+.state-message > span { width: 68px; height: 68px; border-radius: 50%; display: grid; place-items: center; background: var(--soft); color: var(--primary); font: 800 25px Poppins, sans-serif; }
+.state-message h2 { margin: 15px 0 4px; }
+.state-message p { color: var(--muted); font-size: 12px; }
+.module-content { animation: page .35s ease-out; }
+.state-success, .state-disabled-note { display: flex; align-items: center; gap: 8px; margin-bottom: 16px; padding: 12px 14px; border-radius: 12px; background: var(--success-soft); color: var(--success); font-size: 12px; font-weight: 700; }
+.state-disabled-note { background: var(--soft); color: var(--primary); }
+.module-disabled > *:not(.state-disabled-note) { pointer-events: none; opacity: .55; }
+
+.access-state { min-height: 70vh; display: grid; place-items: center; align-content: center; text-align: center; }
+.access-code { font: 800 72px Poppins, sans-serif; color: var(--primary); line-height: 1; }
+.access-state h1 { margin: 8px 0; }
+.access-state p { color: var(--muted); }
+.error-screen { min-height: 100vh; background: var(--bg); display: grid; place-items: center; padding: 20px; }
+
+.placeholder-card { padding: 34px; display: flex; align-items: center; gap: 20px; }
+.placeholder-card > span { width: 58px; height: 58px; flex: none; border-radius: 18px; display: grid; place-items: center; background: var(--soft); color: var(--primary); font: 800 25px Poppins, sans-serif; }
+.placeholder-card small { color: var(--primary); font-size: 9px; font-weight: 800; letter-spacing: 1.2px; }
+.placeholder-card h2 { margin: 5px 0 3px; font-size: 20px; }
+.placeholder-card p { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.55; }
+
+@media (max-width: 700px) {
+  .state-skeleton-grid { grid-template-columns: 1fr; }
+  .state-skeleton-grid .skeleton { height: 110px; }
+}

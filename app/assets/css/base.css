@@ -1,0 +1,52 @@
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; background: var(--bg); color: var(--text); overflow-x: hidden; }
+button, input, select { font: inherit; }
+button { cursor: pointer; }
+button:focus-visible, input:focus-visible, select:focus-visible, [tabindex]:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--primary) 28%, transparent);
+  outline-offset: 2px;
+}
+h1, h2, h3, p { margin-top: 0; }
+h1, h2, h3, .logo { font-family: Poppins, sans-serif; }
+
+body, .card, .topbar, .sidebar, input, button, .modal {
+  transition: background-color .25s, color .25s, border-color .25s;
+}
+button, a, [role="button"] {
+  transition: transform .2s ease-out, background-color .22s ease-out, color .22s ease-out,
+    border-color .22s ease-out, box-shadow .25s ease-out, opacity .2s ease-out;
+}
+button:hover:not(:disabled) { filter: brightness(.98); }
+button:active:not(:disabled) { transform: scale(.97); }
+
+select {
+  height: 40px; border: 1px solid var(--border); border-radius: 12px; padding: 0 14px;
+  background: var(--surface); color: var(--text); min-width: 0;
+}
+
+@keyframes page { from { opacity: 0; transform: translateY(7px); } to { opacity: 1; transform: none; } }
+@keyframes fade { from { opacity: 0; transform: translateX(-8px); } to { opacity: 1; transform: none; } }
+@keyframes fade-up { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+@keyframes pop { from { transform: scale(0); } to { transform: scale(1); } }
+@keyframes line { from { width: 0; } to { width: calc(100% - 8px); } }
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes shimmer { to { background-position: -200%; } }
+@keyframes shake { 25% { transform: translateX(-5px); } 50% { transform: translateX(5px); } 75% { transform: translateX(-3px); } }
+@keyframes modal-in { from { opacity: 0; transform: scale(.96) translateY(8px); } to { opacity: 1; transform: none; } }
+@keyframes backdrop-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes toast-in { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+@keyframes toast-progress { from { width: 100%; } to { width: 0; } }
+@keyframes balance-switch { from { opacity: 0; } to { opacity: 1; } }
+@keyframes step-fill { from { transform: scaleX(0); transform-origin: left; } to { transform: scaleX(1); transform-origin: left; } }
+@keyframes peso-bar { from { transform: scaleX(0); transform-origin: left; } to { transform: scaleX(1); transform-origin: left; } }
+@keyframes splash-out { to { opacity: 0; transform: scale(1.015); } }
+@keyframes pattern-drift { to { background-position: 110px 110px; } }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-delay: 0s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}
